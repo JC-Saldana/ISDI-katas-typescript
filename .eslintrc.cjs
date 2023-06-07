@@ -1,0 +1,19 @@
+module.exports = {
+	env: {
+		node: true,
+		es2021: true,
+		jest: true,
+	},
+	extends: ['xo'],
+	parser: '@typescript-eslint/parser',
+	ignorePatterns: ['**/dist/**/*.js'],
+	parserOptions: {
+		ecmaVersion: 'latest',
+		sourceType: 'module',
+	},
+	plugins: ['@typescript-eslint'],
+	rules: {
+		'object-curly-spacing': ['Error', 'always'],
+		'operator-linebreak': ['error', 'after'],
+	},
+};
